@@ -1,8 +1,14 @@
+# Віртуальне середовище
+.venv/
+venv/
+env/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
 
+**/data/
 # C extensions
 *.so
 
