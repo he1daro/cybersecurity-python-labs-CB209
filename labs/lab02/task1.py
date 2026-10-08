@@ -253,7 +253,8 @@ class UserAccount:
 
         else:
             raise KeyError(key)
-        
+
+
 def demo() -> None:
     print("Створення користувача")
 
@@ -372,7 +373,3 @@ def demo() -> None:
 
     print("\nЖурнал аудиту")
     account["audit_log"].show_all()
-
-
-if __name__ == "__main__":
-    demo()

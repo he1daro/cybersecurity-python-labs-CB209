@@ -112,7 +112,7 @@ def export_to_csv(filepath: str, sorted_hosts: list):
         logging.error(f"Помилка запису CSV файлу: {e}")  # noqa: LOG015
 
 
-def main():
+def analyze():
     args = parse_args()
 
     logging.basicConfig(
@@ -137,4 +137,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    analyze()
