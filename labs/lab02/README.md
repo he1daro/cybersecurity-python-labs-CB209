@@ -19,5 +19,6 @@ labs/lab02/
 └── task2.py              # Утиліта для аналізу логів (Завдання 2)   
 
 Як запускати виконання завдань через Terminal:
-1 завдання: python labs\lab02\main.py
-2 завдання: python "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\task2.py" --edr-log "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\data\edr_alerts.json" --min-severity Low --out-csv "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\edr_summary.csv" --log-file "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\system.log"
+1 завдання: python <шлях для файлу> Наприклад: <python labs\lab02\main.py>
+2 завдання: python <шлях до файлу виконання коду> --edr-log <шлях до файлу JSON,який ми аналізуємо> --min-severity <Поріг фільтрації за рівнем небезпеки> --out-csv <Шлях куди буде збережено вихідний файл звіту> --log-file <Шлях куди буде збережено файл з системними логами>
+Наприклад: python "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\task2.py" --edr-log "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\data\edr_alerts.json" --min-severity Low --out-csv "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\edr_summary.csv" --log-file "D:\lpnu\coding\GitHub\cybersecurity-python-labs-CB209\labs\lab02\system.log"

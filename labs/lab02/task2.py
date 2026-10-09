@@ -32,8 +32,14 @@ def load_edr_logs(filepath: str) -> list:
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
-    except Exception as e:  # noqa: BLE001
-        logging.error(f"Помилка читання файлу логів: {e}")  # noqa: LOG015
+    except FileNotFoundError:
+        logging.error("Помилка! Файл не знайдено.") # noqa: LOG015
+        return []  
+    except PermissionError:
+        logging.error("Помилка! Немає доступу до файлу.")  # noqa: LOG015
+        return []
+    except OSError as e:
+        logging.error(f"Помилка файлової системи при записі: {e}")  # noqa: LOG015
         return []
 
 
